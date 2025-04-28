@@ -1,0 +1,85 @@
+{
+  "name": "Pega_Extensions_NetworkDiagramExtended",
+  "label": "Visualizer",
+  "description": "Extension of C11n UI gallery 'Network diagram' component.",
+  "organization": "Pega",
+  "version": "1.0.0",
+  "library": "Extensions",
+  "allowedApplications": [],
+  "componentKey": "Pega_Extensions_NetworkDiagramExtended",
+  "type": "Widget",
+  "subtype": ["PAGE", "CASE"],
+  "properties": [
+    {
+      "name": "heading",
+      "label": "Heading",
+      "format": "TEXT",
+      "required": true
+    },
+    {
+      "name": "dataPage",
+      "label": "Data Page name",
+      "format": "TEXT",
+      "required": true
+    },
+    {
+      "key": "selectionProperty",
+      "format": "PROPERTY",
+      "name": "selectionProperty",
+      "label": "Selection Property"
+    },
+    {
+      "name": "height",
+      "label": "Height of the diagram",
+      "format": "TEXT"
+    },
+    {
+      "name": "showMinimap",
+      "label": "Show mini map",
+      "format": "BOOLEAN",
+      "defaultValue": true
+    },
+    {
+      "name": "showControls",
+      "label": "Show controls",
+      "format": "BOOLEAN",
+      "defaultValue": true
+    },
+    {
+      "name": "showRefresh",
+      "label": "Show refresh action",
+      "format": "BOOLEAN",
+      "defaultValue": true
+    },
+    {
+      "name": "edgePath",
+      "label": "Edge path",
+      "format": "SELECT",
+      "defaultValue": "bezier",
+      "source": [
+        {
+          "key": "bezier",
+          "value": "bezier"
+        },
+        {
+          "key": "straight",
+          "value": "straight"
+        },
+        {
+          "key": "step",
+          "value": "step"
+        },
+        {
+          "key": "floating",
+          "value": "floating"
+        }
+      ]
+    }
+  ],
+  "defaultConfig": {
+    "heading": "Visualizer",
+    "dataPage": "",
+    "height": "60rem",
+    "edgePath": "bezier"
+  }
+}
